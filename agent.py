@@ -434,10 +434,8 @@ if __name__ == '__main__':
     logger.info("  GET  /health  - Health check")
     logger.info("  GET  /info    - Agent information")
     logger.info("  POST /analyze - Main analysis endpoint")
-    import os
-    port = int(os.environ.get('PORT', 5000))
     logger.info("=" * 60)
-    logger.info(f"Server starting on port {port}")
+    logger.info(f"Server starting on port 5000")
     logger.info("=" * 60)
     
-    app.run(host='0.0.0.0', port=port, debug=False)
+    app.run(host='0.0.0.0', port=5000, debug=False)
